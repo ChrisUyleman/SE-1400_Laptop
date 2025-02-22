@@ -16,12 +16,13 @@ ul {
 ul a {
     padding: 10px 10px 0px 10px;
     text-decoration: none;
-    color: black;
+    color: #817CFF;
 }
 
 nav {
     display: grid;
     grid-template-rows: auto 1px;
+    align-items: bottom;
 }
 
 .grid-container {
