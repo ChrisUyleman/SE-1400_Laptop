@@ -2,7 +2,7 @@ ul a, .subtitle, .maintext, .review-title, .review-maintext, .review-time, .revi
     font-family: Inter;
 }
 
-main, ul, #quality, .review, #pricing, #guarantee {
+#website-wrapper, ul, #quality, .review, #pricing, #guarantee {
     display: grid;
 }
 
@@ -34,7 +34,7 @@ main, ul, #quality, .review, #pricing, #guarantee {
     margin-right: 1rem;
 }
 
-#content-wrapper, #review-wrapper {
+main, #review-wrapper {
     margin-top: 1rem;
 }
 
@@ -93,7 +93,7 @@ main, ul, #quality, .review, #pricing, #guarantee {
     margin-top: 5rem
 }
 
-main {
+#website-wrapper {
     grid-template-columns: minmax(0px, 1fr) repeat(7, minmax(0px, 175px)) minmax(0px, 1fr);
     margin: 0px;
 }
@@ -223,7 +223,7 @@ ul a {
     line-height: 1;
 }
 
-#content-wrapper {
+main {
     grid-column: 5 / 9;
     margin-left: 1rem;
 }
