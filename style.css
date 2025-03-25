@@ -65,7 +65,7 @@ main, #review-wrapper {
 
 #quality, #pricing {
     margin-bottom: 2rem;
-    grid-template-columns: repeat(4, minmax(7.5rem, 10rem));
+    grid-template-columns: repeat(4, 1fr);
 }
 
 #quality img, #pricing img {
@@ -215,7 +215,6 @@ ul a {
     align-items: center;
     font-weight: 750;
     color: #4843BE;
-    text-wrap: nowrap;
 }
 
 .maintext {
@@ -243,7 +242,7 @@ main {
 }
 
 #guarantee {
-    grid-template-columns: repeat(4, minmax(7.5rem, 10rem));
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 5rem repeat(2, minmax(7.5rem, 10rem)) 7rem;
     background-color: #FFD1AB;   
     border-radius: 10px; 
@@ -258,6 +257,43 @@ main {
     color: #0000EE;
 }
 
-@media screen {
-    
+@media screen and (max-width: 55rem) {
+    #review-wrapper {
+      grid-row: 3;
+      grid-column: 3 / 8;
+      margin-left: 0px;
+    }
+    main {
+        grid-row: 2;
+        grid-column: 3 / 8;
+        margin-right: 0px;
+    }
+    .subtitle {
+        text-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 42.75rem) {
+    #quality img, #pricing img {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        width: 50%;
+    }
+    .maintext  {
+        grid-column: 1 / 4;
+    }
+    .subtitle{
+        grid-column: 1 / 4;
+        margin: 0px;
+        justify-content: center;
+        text-wrap: wrap;
+    }
+    #guarantee img {
+        width: 50%;
+        align-self: center;
+    }
+    #guarantee {
+        display: flex;
+        flex-direction: column;
+    }
 }
