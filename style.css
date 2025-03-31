@@ -108,6 +108,8 @@ header {
     grid-column: 2 / 9;
     background-color: #D2D0FF;
     margin-bottom: 1rem;
+    top: 0;
+    position: sticky;
 }
 
 p {
@@ -200,8 +202,8 @@ ul a {
 }
 
 .logo {
-    height: 140px;
-    width: 221px;
+    display: flex;
+    width: 25%;
     margin: 1rem 2rem 1rem 1rem;
 }
 
@@ -257,7 +259,7 @@ main {
     color: #0000EE;
 }
 
-@media screen and (max-width: 55rem) {
+@media screen and (max-width: 992px) {
     #review-wrapper {
       grid-row: 3;
       grid-column: 3 / 8;
@@ -271,9 +273,26 @@ main {
     .subtitle {
         text-wrap: nowrap;
     }
+    ul {
+        margin-right: 1rem;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        position: inherit;
+    }
+    a {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        align-self: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
-@media screen and (max-width: 42.75rem) {
+@media screen and (max-width: 768px) {
     #quality img, #pricing img {
         grid-column: 1 / 4;
         grid-row: 3 / 4;
@@ -283,9 +302,10 @@ main {
         grid-column: 1 / 4;
     }
     .subtitle{
-        grid-column: 1 / 4;
+        grid-column: 1 / 5;
         margin: 0px;
         justify-content: center;
+        align-self: center;
         text-wrap: wrap;
     }
     #guarantee img {
@@ -295,5 +315,15 @@ main {
     #guarantee {
         display: flex;
         flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        position: inherit;
+    }
+    .logo {
+        align-self: center;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
