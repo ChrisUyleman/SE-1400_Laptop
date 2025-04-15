@@ -353,4 +353,21 @@ main {
         margin-right: auto;
         margin-left: auto;
     }
+    .review-title {
+        text-wrap: wrap;
+    }
+}
+@media screen and (max-width: 363px) {
+    ul a {
+        padding: 0px;
+    }
+    .review-time {
+        text-wrap: wrap;
+    }
+}
+@media screen and (max-width: 244px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
 }
