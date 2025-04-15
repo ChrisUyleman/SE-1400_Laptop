@@ -1,5 +1,6 @@
 html {
     background-image: linear-gradient(#a8cbff, #ffe0c7, #ffcea5);
+    
 }
 ul a, .subtitle, .maintext, .review-title, .review-maintext, .review-time, .review-subtitle, .wrapper, ul a {
     font-family: Inter;
@@ -138,7 +139,6 @@ ul a {
     grid-template-columns: repeat(2, minmax(10rem, 1fr));
     background-color: #FFEDD3;
     margin-bottom: 2rem;
-    min-width: 30rem;
 }
 
 .review-block {
@@ -269,6 +269,28 @@ main {
       grid-row: 3;
       grid-column: 3 / 8;
       margin-left: 0px;
+    }
+    .review {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-block {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 1rem 0px 0px 0px;
+    }
+    .review-title {
+        margin: 10px;
+        padding: 0px;
+    }
+    .review-maintext {
+        padding: 0px 2rem 0px 2rem;
+        margin: 10px;
+    }
+    .review-time {
+        margin: 10px;
     }
     main {
         grid-row: 2;
