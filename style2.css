@@ -175,6 +175,13 @@ main {
     color: #0000EE;
 }
 
+#contact-box {
+    margin: 0px;
+    padding-top: 3rem;
+    grid-row: 3 / 4;
+    grid-column: 1 / 10;
+}
+
 footer {
     grid-column: 2/9;
     grid-row: 3;
@@ -195,6 +202,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+    header {
+        height: 100%;
+        margin: 0px;
+    }
     main {
         grid-row: 2;
         grid-column: 3 / 8;
@@ -219,6 +230,9 @@ footer {
         align-self: center;
         margin-right: auto;
         margin-left: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 20%;
     }
     #location-wrapper {
         flex-direction: column;
