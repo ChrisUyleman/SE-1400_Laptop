@@ -51,11 +51,11 @@ main, #review-wrapper {
     grid-column: 1;
 }
 
-#contact, .watch-icon {
+#contact, .mail-icon {
     grid-column: 2;
 }
 
-#schedule, .mail-icon {
+#schedule, .watch-icon {
     grid-column: 3;
 }
 
@@ -145,7 +145,9 @@ ul a {
     grid-row: 1;
     grid-column: 3 / 4;
     padding: 2rem 2rem 0px 0px;
-    margin-left: auto;    
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .review-subtitle {
@@ -153,6 +155,7 @@ ul a {
     align-items: center;
     justify-content: center;
     font-weight: 900;
+    text-wrap: nowrap;
 }
 
 .review-title {
@@ -209,6 +212,7 @@ ul a {
 .reviewer-img {
     height: 100px;
     width: 100px;
+    align-self: center;
 }
 
 .subtitle {

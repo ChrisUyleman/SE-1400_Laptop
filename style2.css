@@ -49,11 +49,11 @@ main {
     grid-column: 1;
 }
 
-#contact, .watch-icon {
+#contact, .mail-icon {
     grid-column: 2;
 }
 
-#schedule, .mail-icon {
+#schedule, .watch-icon {
     grid-column: 3;
 }
 
@@ -199,6 +199,32 @@ footer {
 
 #location-wrapper p, #location-wrapper h1, #location-wrapper img{
     padding: 1rem;
+}
+
+#location-wrapper h1 {
+    text-wrap: nowrap;
+}
+
+
+
+.button {
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 229, 159);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ffe08a;
+    color: black;
+    box-shadow: 0px 1px 3px gray;
 }
 
 @media screen and (max-width: 992px) {
